@@ -21,3 +21,17 @@ var person2 = (name: "Jim", age: 30)
 print("\(person2.name)'s age is \(person2.age)")
 person2.age = 32
 print("\(person2.name)'s age is \(person2.age)")
+
+
+var siblingsAtMyAge : (age: Int, siblingOne: String, siblingTwo: String, siblingThree: String?)
+siblingsAtMyAge.age = 4
+siblingsAtMyAge.siblingOne = "Marli"
+siblingsAtMyAge.siblingTwo = "Naomi"
+siblingsAtMyAge.siblingThree = "Howie"
+
+if siblingsAtMyAge.age > 6 {
+     print("When I was \(siblingsAtMyAge.age) I had sibling, \(siblingsAtMyAge.siblingOne), \(siblingsAtMyAge.siblingTwo) and \(siblingsAtMyAge.siblingThree!)")
+} else {
+    print("When I was \(siblingsAtMyAge.age) I had siblings: \(siblingsAtMyAge.siblingOne), \(siblingsAtMyAge.siblingTwo).")
+}
+
